@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root{
+    background-color: #a52727;
+}
+
+body{
+    background-color:var(background-color);
+    margin: 0%;
+}
+.main{
+    margin-top: 20%;
+    position: absolute;
+    margin-left: 18%;
+    padding: 1.5rem;
+    padding-left: 35px;
+    width: 35vw;
+    height: 40vh;
+    border-radius: 1%;
+    /* background-color: rgb(131, 104, 104);*/
+    border-style: dotted;
+    border-color: aliceblue;
+
+}
+h1{
+    font-family: 'Press Start 2P', cursive;}
+
+.text{
+    font-weight:900;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 3%;
+    
+}
+    
+
+ul>li{
+    padding: 0.3rem;
+    font-weight: 900;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+
+}
+
+#computer{
+    color: aliceblue;
+    margin-top: 20%;
+    margin-left: 65%;
+    position: absolute;
+}
+.hidden{
+    display: none;
+}
+
+.wb-title{
+    font-weight: 300;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+.wb-body {
+    background: rgb(255, 255, 255);
+    padding: 60px;
+    overflow-y: hidden;
+    border-style: 2px dotted;
+    border-color: white;
+    border-radius: 1%;
+    margin: 0px;
+    
+}
+#winbox-1{
+    border-style: dotted;
+    border-color: aliceblue;
+    border-radius: 2%;
+    
+}
+
+
+/* the about section*/
+h2{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+}
+#me{
+    font-family: 'Roboto Mono', monospace;
+}
+.jop{
+    font-size:larger;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-line: line-through;
+
+}
+.num{
+    text-decoration-line: line-through;
+    color: rgb(72, 66, 66);
+}
+.num:hover{
+    color: orange;
+    
+}
+/* about hover color changing*/
+#about:hover, #project:hover{
+    color: white;
+
+}
+/* link do*/
+a:-webkit-any-link{
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#projects-content >p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
