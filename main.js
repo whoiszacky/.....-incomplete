@@ -43,3 +43,13 @@ projects.addEventListener('click', () => {
     },
   })
 })
+
+
+// user colorchnger //
+
+const colorpicker = document.querySelector (".colorchnger input")
+const bodyTag = document.querySelector("body")
+
+colorpicker.addEventListener("input", function () {
+  bodyTag.style.backgroundColor = colorpicker.value
+})

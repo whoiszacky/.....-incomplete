@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-:root{
-    background-color: #a52727;
-}
 
 body{
-    background-color:var(background-color);
+    background-color:#a52727;
     margin: 0%;
 }
 .main{
@@ -110,4 +107,25 @@ a:-webkit-any-link{
 
 #projects-content >p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* user color picker css */
+.colorchnger{
+    position: fixed;
+    border: white dotted 3px;
+    border-radius: 42%;
+    top:10%;
+    right:12%;
+    font-weight: 300;
+    font-family:monospace;
+    padding: 8px 16px 8px 16px;
+    
+}
+.colorchnger input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0%;
+
 }
