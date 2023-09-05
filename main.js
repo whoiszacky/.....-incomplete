@@ -3,6 +3,7 @@ const projects = document.querySelector("#project")
 const aboutContent = document.querySelector("#about-content")
 const projectsContent = document.querySelector("#projects-content")
 
+
 aboutMe.addEventListener('click', () => {
   const aboutBox = new WinBox({
     title: 'About Me',
@@ -46,10 +47,31 @@ projects.addEventListener('click', () => {
 
 
 // user colorchnger //
+// Select the color picker and body elements
+let colorpicker = document.querySelector(".colorchnger input");
+let bodyTag = document.querySelector("body");
 
-const colorpicker = document.querySelector (".colorchnger input")
-const bodyTag = document.querySelector("body")
+// Function to update the background color and save it in localStorage
+function updateColor() {
+  let selectedColor = colorpicker.value;
+  bodyTag.style.backgroundColor = selectedColor;
+  
+  // Save the selected color in localStorage
+  localStorage.setItem("userSelectedColor", selectedColor);
+}
 
-colorpicker.addEventListener("input", function () {
-  bodyTag.style.backgroundColor = colorpicker.value
-})
+// Add an event listener to the color picker to update the color and save it
+colorpicker.addEventListener("input", updateColor);
+
+// Load the user's selected color when the page loads
+window.onload = function () {
+  // Retrieve the user's selected color from localStorage
+  let savedColor = localStorage.getItem("userSelectedColor");
+
+  // Check if a color was previously saved
+  if (savedColor) {
+    // Update the color picker and background color
+    colorpicker.value = savedColor;
+    bodyTag.style.backgroundColor = savedColor;
+  }
+};
