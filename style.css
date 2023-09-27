@@ -5,7 +5,6 @@
 body{
     background-color:#ffffff;
     margin: 0%;
-    overflow-x: hidden;
 }
 .main{
    
@@ -75,24 +74,19 @@ h2{
     font-weight: 400;
 }
 #me{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace;
 }
-.jop{
-    font-size:larger;
-    font-family: 'Roboto Mono', monospace;
-    text-decoration-line: line-through;
 
-}
-.num{
-    text-decoration-line: line-through;
-    color: rgb(72, 66, 66);
-}
-.num:hover{
-    color: orange;
+
+#contact a{
+    text-decoration: none;
+    display: block;
     
+    color: black;
+    font-family: 'Press Start 2P';
 }
 /* about hover color changing*/
-#about:hover, #project:hover{
+#about:hover, #project:hover, #contact a:hover{
     color: #a52727;
 
 }
@@ -106,7 +100,23 @@ a:-webkit-any-link{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h4{
+    color: rgb(71, 70, 70);
+}
 
+
+/* svg sizing */
+svg{
+    transform: scale(0.4);
+}
+
+
+#techskill{
+    display: inline-block;
+    margin-left: -3%;
+    margin-top: -4%;
+    gap: 5px;
+}
 /* user color picker css */
 
 .colorchnger{

@@ -8,8 +8,8 @@ aboutMe.addEventListener('click', () => {
   const aboutBox = new WinBox({
     title: 'About Me',
     modal: true,
-    width: '370px',
-    height: '370px',
+    width: '70%',
+    height: '100%',
     /*
     top: "25%",
     right: 50,
@@ -21,6 +21,10 @@ aboutMe.addEventListener('click', () => {
     onfocus: function () {
       this.setBackground("#332F2E")
     },
+    fullscreen: function(){
+
+      winbox.fullscreen(!this.full);
+  },
     // remove modal true, to use onBlur function, hadii kle ma arki doontid effect of oblur funcion
     /*
     onblur: function () {
@@ -28,6 +32,8 @@ aboutMe.addEventListener('click', () => {
     },*/
   })
 })
+
+
 
 
 projects.addEventListener('click', () => {
