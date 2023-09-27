@@ -7,20 +7,25 @@ const projectsContent = document.querySelector("#projects-content")
 aboutMe.addEventListener('click', () => {
   const aboutBox = new WinBox({
     title: 'About Me',
-    // modal: true,
+    modal: true,
     width: '370px',
     height: '370px',
+    /*
     top: "25%",
     right: 50,
     bottom: 50,
-    left: "50%",
+    */
+    x: "center",
+    y: "center",
     mount: aboutContent,
     onfocus: function () {
-      this.setBackground('#a52727')
+      this.setBackground("#332F2E")
     },
+    // remove modal true, to use onBlur function, hadii kle ma arki doontid effect of oblur funcion
+    /*
     onblur: function () {
-      this.setBackground('#e27865')
-    },
+      this.setBackground('#999999')
+    },*/
   })
 })
 
@@ -28,19 +33,22 @@ aboutMe.addEventListener('click', () => {
 projects.addEventListener('click', () => {
   const projectBox = new WinBox({
     title: 'Projects',
-    // modal: true,
+    modal: true,
+    // remove modal true , hadii adan rabin in screen ka dhan uu qabsado 
     width: '370px',
     height: '370px',
-    top: "30%",
+
+    /*top: "30%",
     right: 50,
-    bottom: 50,
-    left: "60%",
+    bottom: 50,*/
+    x: "center",
+    y: "center",
     mount: projectsContent,
     onfocus: function () {
-      this.setBackground('#a52727')
+      this.setBackground("#332F2E")
     },
     onblur: function () {
-      this.setBackground('#e27865')
+      this.setBackground("#999999")
     },
   })
 })
@@ -75,3 +83,5 @@ window.onload = function () {
     bodyTag.style.backgroundColor = savedColor;
   }
 };
+
+console.log("                         ______                     \r\n _________        .---\"\"\"      \"\"\"---.              \r\n:______.-\':      :  .--------------.  :             \r\n| ______  |      | :                : |             \r\n|:______B:|      | |  Little secret:| |             \r\n|:______B:|      | |                | |             \r\n|:______B:|      | |  I GOOGLE  A   | |             \r\n|         |      | |  LOT.          | |             \r\n|:_____:  |      | |                | |             \r\n|    ==   |      | :                : |             \r\n|       O |      :  \'--------------\'  :             \r\n|       o |      :\'---...______...---\'              \r\n|       o |-._.-i___\/\'             \\._              \r\n|\'-.____o_|   \'-.   \'-...______...-\'  `-._          \r\n:_________:      `.____________________   `-.___.-. \r\n                 .\'.eeeeeeeeeeeeeeeeee.\'.      :___:\r\n    fsc        .\'.eeeeeeeeeeeeeeeeeeeeee.\'.         \r\n              :____________________________:%c\r\n\r\n\uD835\uDC37\uD835\uDC5C \uD835\uDC66\uD835\uDC5C\uD835\uDC62 \uD835\uDC58\uD835\uDC5B\uD835\uDC5C\uD835\uDC64 \uD835\uDC61\u210E\uD835\uDC56\uD835\uDC60 \uD835\uDC5D\uD835\uDC4E\uD835\uDC54\uD835\uDC52 \uD835\uDC60\uD835\uDC61\uD835\uDC5C\uD835\uDC5F\uD835\uDC52\uD835\uDC60 \uD835\uDC66\uD835\uDC5C\uD835\uDC62\uD835\uDC5F \uD835\uDC5D\uD835\uDC5F\uD835\uDC52\uD835\uDC53\uD835\uDC52\uD835\uDC5F\uD835\uDC5F\uD835\uDC52\uD835\uDC51 \uD835\uDC4F\uD835\uDC4E\uD835\uDC50\uD835\uDC58\uD835\uDC54\uD835\uDC5C\uD835\uDC62\uD835\uDC5B\uD835\uDC51 \uD835\uDC50\uD835\uDC5C\uD835\uDC59\uD835\uDC5C\uD835\uDC5F?\r\n\uD835\uDC61\uD835\uDC5C \uD835\uDC50\u210E\uD835\uDC52\uD835\uDC50\uD835\uDC58 \uD835\uDC56\uD835\uDC61, \uD835\uDC50\u210E\uD835\uDC4E\uD835\uDC5B\uD835\uDC54\uD835\uDC52 \uD835\uDC61\u210E\uD835\uDC52 \uD835\uDC4F\uD835\uDC4E\uD835\uDC50\uD835\uDC58\uD835\uDC54\uD835\uDC5F\uD835\uDC5C\uD835\uDC62\uD835\uDC5B\uD835\uDC51 \uD835\uDC50\uD835\uDC5C\uD835\uDC59\uD835\uDC5C\uD835\uDC5F \uD835\uDC4E\uD835\uDC5B\uD835\uDC51 \uD835\uDC5F\uD835\uDC52\uD835\uDC59\uD835\uDC5C\uD835\uDC4E\uD835\uDC51 \uD835\uDC61\u210E\uD835\uDC52 \uD835\uDC5D\uD835\uDC4E\uD835\uDC54\uD835\uDC52")

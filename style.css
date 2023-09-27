@@ -3,22 +3,25 @@
 
 
 body{
-    background-color:#a52727;
+    background-color:#ffffff;
     margin: 0%;
+    overflow-x: hidden;
 }
 .main{
-    margin-top: 20%;
+   
     position: absolute;
-    margin-left: 18%;
-    padding: 1.5rem;
-    padding-left: 35px;
-    width: 35vw;
-    height: 40vh;
-    border-radius: 1%;
-    /* background-color: rgb(131, 104, 104);*/
-    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
     border-color: aliceblue;
 
+}
+.text{
+    color: rgb(0, 0, 0);
 }
 h1{
     font-family: 'Press Start 2P', cursive;}
@@ -39,12 +42,6 @@ ul>li{
 
 }
 
-#computer{
-    color: aliceblue;
-    margin-top: 20%;
-    margin-left: 65%;
-    position: absolute;
-}
 .hidden{
     display: none;
 }
@@ -65,7 +62,7 @@ ul>li{
     
 }
 #winbox-1{
-    border-style: dotted;
+    border-style: solid;
     border-color: aliceblue;
     border-radius: 2%;
     
@@ -96,7 +93,7 @@ h2{
 }
 /* about hover color changing*/
 #about:hover, #project:hover{
-    color: white;
+    color: #a52727;
 
 }
 /* link do*/
@@ -108,10 +105,13 @@ a:-webkit-any-link{
 #projects-content >p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
 /* user color picker css */
+
 .colorchnger{
     position: fixed;
-    border: white dotted 3px;
+    border: rgb(0, 0, 0) groove 3px;
     border-radius: 42%;
     top:10%;
     right:12%;
