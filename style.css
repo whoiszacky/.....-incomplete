@@ -121,13 +121,12 @@ svg{
 
 .colorchnger{
     position: fixed;
-    border: rgb(0, 0, 0) groove 3px;
-    border-radius: 42%;
     top:10%;
     right:12%;
-    font-weight: 300;
-    font-family:monospace;
-    padding: 8px 16px 8px 16px;
+    padding: 20px;
+    background-image: url(/img/color-wheel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
 .colorchnger input{
